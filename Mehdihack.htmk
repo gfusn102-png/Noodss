@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hack Shindig</title></head>
+<body style="background:#0a0a0a;color:#00ff00;font-family:sans-serif;text-align:center;padding-top:20%;">
+<h1 style="font-size:50px;">🔥 Mahdi badbakht hack shindig 🔥</h1>
+<p style="color:#ff0;font-size:20px;">😂 حالا بگو ببینم، چقدر بدبخت شدی؟ 😂</p>
+<button onclick="this.innerText='🤣 تو که بدبخت‌تری!'" style="padding:15px 30px;background:#ff0;color:#000;border:none;border-radius:10px;font-size:20px;cursor:pointer;">👀 بزن ببینم!</button>
+</body>
+</html>
